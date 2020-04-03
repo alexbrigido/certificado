@@ -74,7 +74,7 @@ public class CriarCertificadoTest {
         ks.load(in, password);
         in.close();
 
-        // obt�m o certificado e as chaves da AC
+        // obtem o certificado e as chaves da AC
         X509Certificate acCert = (X509Certificate) ks.getCertificate("main");
         KeyPair acKeyPair = new KeyPair(acCert.getPublicKey(), (PrivateKey) ks.getKey("main", password));
 

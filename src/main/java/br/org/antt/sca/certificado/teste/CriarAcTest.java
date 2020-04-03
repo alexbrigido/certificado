@@ -55,14 +55,14 @@ public class CriarAcTest {
     }
 
     /**
-     * Cria um novo certificado de AC (a partir do qual serão emitidos outros certificados)
+     * Cria um novo certificado de AC (a partir do qual serao emitidos outros certificados)
      */
     public static void main(String[] args) throws Exception {
         KeyPair acKeyPair = genKeyPair(4096);
 
         String acSubject = "C=BR,O=TRT2,CN=AC Test";
-        // criar AC com validade de 30 anos (365 * 30)
-        X509Certificate acCert = createAcCert(acSubject, new BigInteger("1234"), 365 * 30, acKeyPair);
+        // criar AC com validade de 30 anos (365 * 5)
+        X509Certificate acCert = createAcCert(acSubject, new BigInteger("1234"), 365 * 5, acKeyPair);
         saveToKeystore(acCert, acKeyPair.getPrivate(), "actest.jks", "JKS");
         saveToFile(acCert, "actest.cer");
 
