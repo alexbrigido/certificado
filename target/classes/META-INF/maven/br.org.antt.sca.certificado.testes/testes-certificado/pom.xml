@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.org.antt.sca.certificado.testes</groupId>
+  <artifactId>testes-certificado</artifactId>
+  <version>1.0.0</version>
+
+
+	<repositories>
+		<repository>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>apache-maven-snapshots</id>
+			<url>http://people.apache.org/repo/m2-snapshot-repository</url>
+		</repository>
+		<repository>
+			<id>java.net</id>
+			<url>http://download.java.net/maven/1</url>
+			<layout>legacy</layout>
+		</repository>
+		<repository>
+			<id>mvn</id>
+			<url>https://mvnrepository.com/</url>
+		</repository>
+	</repositories>
+	
+  <dependencies>
+  		<dependency>
+		    <groupId>org.bouncycastle</groupId>
+		    <artifactId>bcprov-jdk15on</artifactId>
+		    <version>1.57</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.bouncycastle</groupId>
+		    <artifactId>bcmail-jdk15on</artifactId>
+		    <version>1.57</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.bouncycastle</groupId>
+		    <artifactId>bctls-jdk15on</artifactId>
+		    <version>1.57</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.bouncycastle</groupId>
+		    <artifactId>bcpg-jdk15on</artifactId>
+		    <version>1.57</version>
+		    <scope>test</scope>
+		</dependency>
+  
+  </dependencies>
+  
+</project>
